@@ -78,6 +78,11 @@ $movie->setScenography('Thomas E. Sanders');
 $movie->setProducers('Mel Gibson');
 $movie->setGenres('Azione');
 
+$movie2 = new Movie ('Troy', 'Brad Pitt', '2004');
+$movie2->setScenography('David Benioff');
+$movie2->setProducers('Wolfgang Petersen');
+$movie2->setGenres('Guerra');
+
 ?>
 
 <!DOCTYPE html>
@@ -89,7 +94,7 @@ $movie->setGenres('Azione');
   <title>Movie</title>
 </head>
 <body>
-  <h1>MOVIE</h1>
+  <h1>MOVIE:</h1>
   <ul>
     <li>Titolo: <?=$movie->getTitle()?></li>
     <li>Attore: <?=$movie->getActors()?></li>
@@ -97,6 +102,15 @@ $movie->setGenres('Azione');
     <li>Scenografia: <?=$movie->getScenography()?></li>
     <li>Regista: <?=$movie->getProducers()?></li>
     <li>Genere: <?=$movie->getGenres()?></li>
+  </ul>
+  <h1>MOVIE 2:</h1>
+  <ul>
+    <li>Titolo: <?=$movie2->getTitle()?></li>
+    <li>Attore: <?=$movie2->getActors()?></li>
+    <li>Anno: <?=$movie2->getDate()?></li>
+    <li>Scenografia: <?=$movie2->getScenography()?></li>
+    <li>Regista: <?=$movie2->getProducers()?></li>
+    <li>Genere: <?=$movie2->getGenres()?></li>
   </ul>
 </body>
 </html>
